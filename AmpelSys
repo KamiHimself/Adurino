@@ -32,7 +32,7 @@ if (tasterstatus == HIGH)
   digitalWrite(GELB,LOW);
   delay(2000);
   digitalWrite(ROTA,HIGH);
-  delay(6000);
+  delay(4000);
   digitalWrite(ROT,LOW);
   delay(2000);
   digitalWrite(GRUEN,HIGH);
@@ -46,7 +46,7 @@ if (tasterstatus == HIGH)
   digitalWrite(ROTA,LOW);
   delay(2000);
   digitalWrite(GELB,LOW);
-  delay(2000);
+  delay(500);
   digitalWrite(GRUENA, HIGH);
   }
 

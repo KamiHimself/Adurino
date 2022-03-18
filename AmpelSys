@@ -1,5 +1,5 @@
   int Taster=2; //Deklaration
-  int tasterstatus=0;
+  int tasterstatus=0;// Variabel in der Intreger gespeichert werden
   int ROTA=13;
   int GELB=12;
   int GRUENA=8;
@@ -17,17 +17,17 @@ void setup() {
 }
 
 void loop() {
-digitalWrite(GRUENA, HIGH);
+digitalWrite(GRUENA, HIGH);//Schaltet pin8 ein
 digitalWrite(ROT,HIGH);
-int tasterstatus;
+int tasterstatus;// Variabel in der Intreger gespeichert werden
 tasterstatus = digitalRead(Taster);// auslesen von pin 2(Befehl: digitalRead)
-Serial.println(tasterstatus,DEC);
-if (tasterstatus == HIGH)
+Serial.println(tasterstatus,DEC);// gibt den gelesenen input in dezimahlzahl wieder
+if (tasterstatus == HIGH)//begin der if-loop
   {
   delay(2000);// wartezeit 2sek
   digitalWrite(GRUENA,LOW);//Schaltet pin8 aus
   delay(2000);
-  digitalWrite(GELB,HIGH);//Schaltet pin12 ein
+  digitalWrite(GELB,HIGH);
   delay(2000);
   digitalWrite(GELB,LOW);
   delay(2000);

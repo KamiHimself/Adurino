@@ -1,3 +1,2 @@
-# Arduino
-Ampelsystem
-Nach abschluss der loop wird diese neu gestartet.
+# Arduino Ampelsystem
+Nach abschluss der if-loop wird diese neu gestartet.

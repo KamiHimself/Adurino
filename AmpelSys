@@ -1,4 +1,4 @@
-  int Taster=2; //Deklaration
+int Taster=2; //Deklaration
   int tasterstatus=0;// Variabel in der Intreger gespeichert werden
   int ROTA=13;
   int GELB=12;
@@ -7,7 +7,7 @@
   int GRUEN=4;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(9600);//setzen der baudrate
   pinMode(2, INPUT); //pin2 input = Eingang
   pinMode(13, OUTPUT);// pin13 output = Ausgang
   pinMode(12, OUTPUT);// pin12 output = Ausgang
@@ -20,8 +20,8 @@ void loop() {
 digitalWrite(GRUENA, HIGH);//Schaltet pin8 ein
 digitalWrite(ROT,HIGH);
 int tasterstatus;// Variabel in der Intreger gespeichert werden
-tasterstatus = digitalRead(Taster);// auslesen von pin 2(Befehl: digitalRead)
-Serial.println(tasterstatus,DEC);// gibt den gelesenen input in dezimahlzahl wieder
+tasterstatus = digitalRead(Taster);// Auslesen von pin 2(Befehl: digitalRead)
+Serial.println(tasterstatus,DEC);// gibt den gelesenen input in dezimalzahl wieder
 if (tasterstatus == HIGH)//begin der if-loop
   {
   delay(2000);// wartezeit 2sek
@@ -51,4 +51,4 @@ if (tasterstatus == HIGH)//begin der if-loop
   }
 
 
-}
+}// Ende der Schleife
